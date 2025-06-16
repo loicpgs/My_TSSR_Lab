@@ -1,0 +1,88 @@
+# 🔧 Formation TSSR – Journal de progression & environnement VM
+
+Bienvenue dans mon projet de formation **Technicien Système et Réseau (TSSR)**.  
+Ce dépôt contient mon journal de progression, mes configurations VM, scripts et notes techniques, mis à jour au fil de ma montée en compétences.
+
+---
+
+## 📅 Journal de progression résumé
+
+| Date       | Activité principale                             | Durée estimée | Niveau perçu | Notes clés                                                                                  |
+|------------|------------------------------------------------|---------------|--------------|--------------------------------------------------------------------------------------------|
+| 2025-06-02 | Installation outils & VirtualBox, 1er test VM  | 3h30          | Moyen        | Mise en place Windows 11 Pro, PuTTY, Wireshark, Brave. Installation VM Ubuntu Server initiale |
+| 2025-06-03 | Installation Ubuntu Server 22.04 LTS VM         | 2h            | Moyen        | Création VM, stockage, utilisateur, connexion SSH, premières commandes Linux                |
+| 2025-06-05 | Commandes Bash, configuration réseau de base    | 3h            | Moyen        | Configuration IP statique, découverte Netplan, création VM Windows                          |
+| 2025-06-06 | Diagnostic réseau, correction Netplan            | 4h            | Moyen        | Analyse YAML, test ping, difficultés DNS, Additions invitées, réglages réseau VirtualBox    |
+| 2025-06-10 | Nettoyage total, reprise VM propre               | 4h            | Moyen        | Suppression VM, nouvelle installation, renouvellement IP forcé, essais DNS                 |
+| 2025-06-16 | Mise en place avancée Vagrant + gestion erreurs  | 4h+           | Moyen-Avancé | Installation Vagrant, résolution conflit NAT VirtualBox, test réseau inter-VM, gestion droits |
+
+---
+
+## ⚙️ Objectifs de la formation
+
+- Maîtriser l’installation et la configuration de machines virtuelles (Ubuntu Server, Windows)  
+- Comprendre la configuration réseau sous Linux (Netplan, IP statique/dynamique)  
+- Automatiser le déploiement VM avec Vagrant (Ruby)  
+- Appréhender la gestion des erreurs liées à la virtualisation (VirtualBox, règles NAT, ports)  
+- Réaliser la communication inter-VM (ping, SSH, transfert fichiers)  
+- Documenter et structurer les environnements pour un apprentissage efficace
+
+---
+
+## 🔧 Outils utilisés
+
+- **Système hôte** : Windows 11 Pro  
+- **Virtualisation** : [VirtualBox](https://www.virtualbox.org/)  
+- **Automatisation** : [Vagrant](https://www.vagrantup.com/)  
+- **VM invitées** : Ubuntu Server 22.04 LTS, Windows 10 / Server 2022  
+- **Réseau & Debug** : PuTTY, Wireshark, Advanced IP Scanner  
+- **Éditeur & Shell** : PowerShell Windows, Terminal Linux (Bash)  
+
+---
+
+## 🚀 Instructions pour reproduire mon environnement
+
+1. Installer VirtualBox (version 7.x recommandée)  
+2. Installer Vagrant (dernier stable)  
+3. Cloner ce dépôt :  
+   ```bash
+   git clone https://github.com/ton-utilisateur/nom-du-depot.git
+   cd nom-du-depot
+Lancer la VM Ubuntu Server via Vagrant :
+
+bash
+Copier
+Modifier
+vagrant up
+Se connecter à la VM :
+
+bash
+Copier
+Modifier
+vagrant ssh
+Pour ajouter une seconde VM, suivre le guide multi-vm (exemple dans Vagrantfile)
+
+Consulter la documentation dans docs/ pour plus de détails sur la configuration réseau
+
+📂 Contenu du dépôt
+Vagrantfile — Configuration de la VM(s) avec Vagrant
+
+scripts/ — Scripts Bash pour la configuration initiale et réseau
+
+docs/ — Notes techniques, commandes Linux, guide réseau
+
+captures/ — Captures d’écran d’erreurs et de configuration
+
+README.md — Ce fichier
+
+📚 Ressources utiles
+Ubuntu Server 22.04 LTS ISO
+
+VirtualBox Documentation
+
+Vagrant Documentation
+
+Netplan Documentation
+
+Linux Command Cheat Sheet
+
