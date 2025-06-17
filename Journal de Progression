@@ -1,0 +1,92 @@
+# 🛠️ Journal de Progression : Auto-formation Système & Réseau  
+**Date de début** : 21 mai 2025  
+**Rythme** : ~4 jours/semaine, 3–4 heures par session  
+**Date actuelle** : 17 juin 2025
+
+---
+
+## Semaine 1 : 21 – 24 mai
+
+### ✅ Installation des outils de base
+- Installation des outils essentiels pour l’administration réseau et système :
+  - Oracle VirtualBox
+  - PuTTY
+  - Advanced IP Scanner
+  - Wireshark
+- Premiers tests et découverte de l’interface de chaque outil.
+- Visionnage de tutoriels pour comprendre leur utilité.
+- Mise en place d’un environnement de travail de base.
+
+---
+
+## Semaine 2 : 26 – 30 mai
+
+### 🖥️ Introduction à Linux & Terminal
+- Apprentissage des commandes Linux de base :
+  - `ls`, `cd`, `pwd`, `mkdir`, `touch`, `rm`, `cp`, `mv`
+  - Gestion des permissions : `chmod`, `chown`, `ls -l`
+- Utilisation d’un terminal local Linux (ou WSL).
+- Premiers scripts Bash très simples.
+- Compréhension des chemins absolus/relatifs.
+- Découverte de la gestion des processus : `top`, `ps`, `kill`, `htop`
+
+---
+
+## Semaine 3 : 2 – 6 juin
+
+### 🧪 Installation et configuration de machines virtuelles
+- Installation d’une VM Ubuntu Server avec VirtualBox.
+- Création de snapshots et tests de restauration.
+- Installation d’une VM Windows 10 également.
+- Compréhension des paramètres matériels : RAM, CPU, cartes réseau.
+- Tests réseau de base dans la VM :
+  - Récupération IP avec `ip a`, test `ping`
+  - Connexion SSH depuis Windows vers Ubuntu via PuTTY
+
+---
+
+## Semaine 4 : 9 – 13 juin
+
+### 🎮 OverTheWire : Bandit + Pratique Bash
+- Début du jeu **Bandit** sur OverTheWire pour s’entraîner au terminal.
+- Progression du **niveau 0 au niveau 12** :
+  - Utilisation de `cat`, `file`, `find`, `grep`, `base64`, `cut`, `xxd`, `strings`, et les pipes `|`
+  - Navigation dans des fichiers cachés, avec permissions spéciales ou contenu binaire.
+- Renforcement de la logique shell et de la compréhension du système de fichiers Linux.
+
+---
+
+## Semaine 5 : 14 – 17 juin
+
+### ⚙️ Vagrant, GitHub et VM automatisée
+- Installation et prise en main de **Vagrant** :
+  - Création d’un fichier `Vagrantfile` pour configurer une VM Ubuntu automatiquement.
+  - Utilisation des commandes : `vagrant up`, `vagrant halt`, `vagrant ssh`, etc.
+- Premiers pas avec Git et GitHub :
+  - Création d’un dépôt GitHub
+  - Initialisation du dépôt local, `git add`, `git commit`, `git push`
+- Tentative de **push d’une VM prête à l’emploi (clé en main)** sur GitHub avec Vagrant.
+- Débogage d’erreurs (box introuvable, SSH par mot de passe obsolète).
+- Apprentissage de la gestion des erreurs Vagrant et du `.gitignore` pour ne pas versionner les fichiers lourds inutiles.
+
+---
+
+## 🧠 Bilan au 17 juin
+
+| Domaine                   | Progrès accompli                     |
+|---------------------------|--------------------------------------|
+| Linux/Bash                | Bases solides, Bandit niveau 12      |
+| Virtualisation            | VMs fonctionnelles (VirtualBox + Vagrant) |
+| Outils réseau             | Installés et explorés                |
+| GitHub                    | Utilisation basique + push en cours |
+| Débogage / Autonomie      | Capacité à résoudre erreurs seul     |
+
+---
+
+## 📅 Prochaines étapes
+- Continuer Bandit jusqu’au niveau 20+
+- Mettre en réseau deux VMs pour des tests (ping, transfert de fichiers)
+- Découvrir `netstat`, `tcpdump`, `nmap`, etc.
+- Finaliser le push d’une VM complète sur GitHub
+- Apprendre à installer et configurer des services : SSH, FTP, Apache, Samba
+
