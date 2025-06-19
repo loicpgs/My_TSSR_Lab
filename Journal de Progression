@@ -90,3 +90,37 @@
 - Finaliser le push d’une VM complète sur GitHub
 - Apprendre à installer et configurer des services : SSH, FTP, Apache, Samba
 
+# Journal de progression – 19/06/2025
+
+## Résumé
+
+Aujourd’hui, j’ai nettoyé mon dossier de projet local pour supprimer les fichiers parasites liés à Vagrant et j’ai créé un dossier propre nommé `VM-TSSR` sur mon Bureau. J’ai initialisé une nouvelle VM Ubuntu 22.04 LTS avec Vagrant, accompagnée d’un script de provisioning automatisé installant des outils essentiels comme curl, vim, net-tools, htop et openssh-server.
+
+J’ai commité les fichiers initiaux (`Vagrantfile`, `provision.sh`, `.gitignore`, `README.md`) et lié le dépôt local à mon dépôt distant GitHub à l’adresse `https://github.com/loicpgs/VM-TSSR.git`.
+
+Après avoir résolu un conflit de fusion dû à un README déjà présent sur GitHub, j’ai réussi à pousser tous les commits vers le dépôt distant. J’ai aussi supprimé un fichier de script de provisioning vide créé par erreur et vérifié que les bons fichiers sont bien présents sur GitHub.
+
+## Détails
+
+- Création et navigation dans un dossier de projet propre `VM-TSSR`.
+- Initialisation de Vagrant avec la box Ubuntu Jammy 22.04.
+- Création du script `provision.sh` avec les commandes d’installation des paquets.
+- Ajout d’un fichier `.gitignore` pour exclure le dossier `.vagrant/` et d’autres fichiers inutiles.
+- Résolution des conflits Git avec la commande `git pull --allow-unrelated-histories`.
+- Validation des commits et push vers GitHub.
+- Vérification de la correspondance entre dépôt local et dépôt distant.
+- Suppression du fichier `.provision.sh` inutile.
+
+## Prochaines étapes
+
+- Poursuivre l’exploration des commandes Linux dans la VM.
+- Pratiquer la configuration réseau et le partage de fichiers entre l’hôte et la VM.
+- Avancer dans les challenges OverTheWire Bandit.
+- Améliorer les scripts de provisioning et automatiser des tâches.
+
+---
+
+*Commit et push effectués le 19/06/2025*  
+
+
+
