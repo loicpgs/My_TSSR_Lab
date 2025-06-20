@@ -123,4 +123,50 @@ Après avoir résolu un conflit de fusion dû à un README déjà présent sur G
 *Commit et push effectués le 19/06/2025*  
 
 
+# Journal de progression – 20/06/2025
+
+## Objectif du jour  
+Repartir d’un environnement Vagrant propre, corriger le provisioning et le README, et sécuriser le dépôt GitHub.
+
+## Actions réalisées
+
+1. **Nettoyage et consolidation des projets Vagrant**  
+   - Suppression des VM et dossiers obsolètes (`vagrant destroy`, `global-status --prune`)  
+   - Choix d’un unique dossier de travail `test-vm` sur le Bureau
+
+2. **Mise à jour du script de provisioning (`provision.sh`)**  
+   - Recréation d’un script propre en UTF‑8/LF  
+   - Installation automatisée de :  
+     - Outils CLI (`curl`, `vim`, `net-tools`, `htop`, `openssh-server`)  
+     - Services : Apache2, Samba, UFW  
+   - Activation et configuration des services (Apache, Samba, pare‑feu UFW)
+
+3. **Vagrantfile optimisé**  
+   - Provisionnement externe lié à `provision.sh`  
+   - Forwarding des ports 80→8080 et 22→2222  
+
+4. **Validation en VM**  
+   - `vagrant up` + `vagrant provision`  
+   - Vérification dans la VM :  
+     - `apache2 -v`, `smbd --version`, `sudo ufw status`  
+     - Tous les services et outils installés et opérationnels  
+
+5. **Git & GitHub**  
+   - Séparation des commits (`README.md`, `provision.sh`) pour un historique propre  
+   - Rebase interactif pour corriger le message du commit `provision.sh`  
+   - Passage du dépôt en mode **privé** sur GitHub  
+
+## Résultat  
+Un dépôt GitHub sécurisé et privé, à jour, contenant :  
+- `Vagrantfile` et `provision.sh` fonctionnels  
+- `README.md` documenté  
+- `.gitignore` configuré  
+
+## Prochaines étapes  
+- Automatiser la création de snapshots VM  
+- Ajouter des exercices de configuration réseau  
+- Poursuivre la documentation des commandes et workflows  
+
+
+
 
